@@ -1,9 +1,10 @@
 class Article {
-  constructor(title, content, image, likeCount = 0) {
+  constructor(title, content, image, likeCount = 0, createdAt = new Date()) {
     this.title = title;
     this.content = content;
     this.image = image;
     this.likeCount = likeCount;
+    this.createdAt = createdAt;
   }
 
   like() {
@@ -11,7 +12,7 @@ class Article {
   }
 
   getInfo() {
-    return `${this.title} - 좋아요: ${this.likeCount}`;
+    return `${this.title} - 좋아요: ${this.likeCount} - 생성일자: ${this.createdAt}`;
   }
 }
 
