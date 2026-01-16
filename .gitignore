@@ -1,0 +1,13 @@
+# Local files
+.vscode/
+node_modules/
+.env*
+!.env.example
+
+# Build output
+dist/
+
+# Uploaded files
+public/*
+!public/.gitkeep
+
